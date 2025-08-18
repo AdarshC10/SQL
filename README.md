@@ -76,7 +76,7 @@ Explored **insurance claims dataset** to analyze **charges, regions, and custome
 - Found factors affecting insurance charges  
 - Visualized smoker vs non-smoker cost difference  
 
-**📂 [View Project](projects/insurance_analysis.sql)**
+**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/insurance_project_script.sql)**
 </details>
 
 ---
