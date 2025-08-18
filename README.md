@@ -58,7 +58,7 @@ Performed **Movie Dataset Analysis** for ratings, revenue, and trends over the y
 - Found highest-rated and most profitable movies  
 - Analyzed movie trends by country and language  
 
-**📂 [View Project](projects/movies_analysis.sql)**
+**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/Movie_Dataset_script.sql)**
 </details>
 
 ---
