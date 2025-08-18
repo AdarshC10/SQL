@@ -1,7 +1,7 @@
 # 📊 Data Analysis Projects
 
 Welcome to my collection of **Data Analysis Projects**!  
-These projects are created using **Python, Pandas, SQL, and Data Visualization** techniques.  
+These projects are created using **SQL** techniques.  
 
 Each project is focused on **exploring datasets, uncovering insights, and presenting results** in a clean and understandable manner.  
 
