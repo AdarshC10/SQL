@@ -3,7 +3,7 @@
 Welcome to my collection of **Data Analysis Projects**!  
 These projects are created using **SQL** techniques.  
 
-Each project is focused on **exploring datasets, uncovering insights, and presenting results** in a clean and understandable manner.  
+Each project focuses on **exploring datasets, uncovering insights, and presenting results** in a clean and understandable way.  
 
 ---
 
@@ -16,14 +16,13 @@ Each project is focused on **exploring datasets, uncovering insights, and presen
 Analyzed different **cereal brands**, their **nutritional values**, and **ratings**.
 
 **Skills Used:**  
-`SQL` 
+`SQL` · `Subqueries` · `Aggregations` · `Data Cleaning`  
 
 **Highlights:**  
 - Compared sugar vs rating for cereals  
 - Found top 5 healthiest cereals  
 
-**📂 [View Project](#)**
-
+**📂 [View Project](projects/cereals_analysis.sql)**
 </details>
 
 ---
@@ -35,14 +34,13 @@ Analyzed different **cereal brands**, their **nutritional values**, and **rating
 Analyzed a **clinical trials dataset** to understand **trial status, phases, and duration**.
 
 **Skills Used:**  
- `SQL`  
+`SQL` · `Joins` · `Subqueries` · `Grouping & Filtering`  
 
 **Highlights:**  
 - Counted trials per phase  
 - Identified most common conditions studied  
 
-**📂 [View Project](#)**
-
+**📂 [View Project](projects/clinical_trials_analysis.sql)**
 </details>
 
 ---
@@ -54,14 +52,13 @@ Analyzed a **clinical trials dataset** to understand **trial status, phases, and
 Performed **Movie Dataset Analysis** for ratings, revenue, and trends over the years.
 
 **Skills Used:**  
-`SQL`   
+`SQL` · `Subqueries` · `Joins` · `Window Functions` · `Aggregations`  
 
 **Highlights:**  
 - Found highest-rated and most profitable movies  
-- Analysis of movie trends by country and language  
+- Analyzed movie trends by country and language  
 
-**📂 [View Project](#)**
-
+**📂 [View Project](projects/movies_analysis.sql)**
 </details>
 
 ---
@@ -73,14 +70,13 @@ Performed **Movie Dataset Analysis** for ratings, revenue, and trends over the y
 Explored **insurance claims dataset** to analyze **charges, regions, and customer patterns**.
 
 **Skills Used:**  
-`SQL`   
+`SQL` · `Case Statements` · `Aggregations` · `Joins`  
 
 **Highlights:**  
 - Found factors affecting insurance charges  
 - Visualized smoker vs non-smoker cost difference  
 
-**📂 [View Project](#)**
-
+**📂 [View Project](projects/insurance_analysis.sql)**
 </details>
 
 ---
@@ -89,17 +85,16 @@ Explored **insurance claims dataset** to analyze **charges, regions, and custome
 <summary>🍜 5. Danny's Diner Analysis</summary>
 
 **Description:**  
-A **SQL-based case study** for analyzing a restaurant’s customer and sales data.
+A **SQL-based case study** analyzing a restaurant’s customer and sales data.
 
 **Skills Used:**  
-`SQL` `Window Functions`  
+`SQL` · `Window Functions` · `Joins` · `Subqueries` · `CTEs`  
 
 **Highlights:**  
 - Calculated total spending per customer  
 - Identified most popular menu items  
 
-**📂 [View Project](#)**
-
+**📂 [View Project](projects/dannys_diner_analysis.sql)**
 </details>
 
 ---
@@ -113,8 +108,4 @@ A **SQL-based case study** for analyzing a restaurant’s customer and sales dat
 
 ---
 
-## 📌 How to Use
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/Data-Analysis-Projects.git
+## 📂 Project Structure
