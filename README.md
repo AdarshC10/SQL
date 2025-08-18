@@ -16,8 +16,7 @@ Each project is focused on **exploring datasets, uncovering insights, and presen
 Analyzed different **cereal brands**, their **nutritional values**, and **ratings**.
 
 **Skills Used:**  
-`Python` `Pandas` `Matplotlib` `Seaborn`  
-
+`SQL` 
 **Highlights:**  
 - Compared sugar vs rating for cereals  
 - Found top 5 healthiest cereals  
@@ -54,7 +53,7 @@ Analyzed a **clinical trials dataset** to understand **trial status, phases, and
 Performed **Movie Dataset Analysis** for ratings, revenue, and trends over the years.
 
 **Skills Used:**  
-`SQL` `Pandas` `Matplotlib`  
+`SQL`   
 
 **Highlights:**  
 - Found highest-rated and most profitable movies  
@@ -73,7 +72,7 @@ Performed **Movie Dataset Analysis** for ratings, revenue, and trends over the y
 Explored **insurance claims dataset** to analyze **charges, regions, and customer patterns**.
 
 **Skills Used:**  
-`Python` `Pandas` `Seaborn`  
+`SQL`   
 
 **Highlights:**  
 - Found factors affecting insurance charges  
@@ -108,11 +107,7 @@ A **SQL-based case study** for analyzing a restaurant’s customer and sales dat
 
 | Tool / Library     | Badge                                                                 |
 |--------------------|----------------------------------------------------------------------|
-| **Python**         | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-| **Pandas**         | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) |
 | **SQL**            | ![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=sqlite&logoColor=white) |
-| **Matplotlib**     | ![Matplotlib](https://img.shields.io/badge/Matplotlib-333?style=for-the-badge&logo=plotly&logoColor=white) |
-| **Seaborn**        | ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white) |
 | **Excel**          | ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) |
 
 ---
