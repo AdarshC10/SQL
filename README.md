@@ -40,7 +40,7 @@ Analyzed a **clinical trials dataset** to understand **trial status, phases, and
 - Counted trials per phase  
 - Identified most common conditions studied  
 
-**📂 [View Project](projects/clinical_trials_analysis.sql)**
+**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/Clinictrial_project_script.sql)**
 </details>
 
 ---
