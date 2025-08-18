@@ -22,7 +22,7 @@ Analyzed different **cereal brands**, their **nutritional values**, and **rating
 - Compared sugar vs rating for cereals  
 - Found top 5 healthiest cereals  
 
-**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/Danny's%20Dinner%20Case%20Study.sql)**
+**📂 [View Project]()**
 </details>
 
 ---
@@ -94,7 +94,7 @@ A **SQL-based case study** analyzing a restaurant’s customer and sales data.
 - Calculated total spending per customer  
 - Identified most popular menu items  
 
-**📂 [View Project](projects/dannys_diner_analysis.sql)**
+**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/Danny's%20Dinner%20Case%20Study.sql)**
 </details>
 
 ---
