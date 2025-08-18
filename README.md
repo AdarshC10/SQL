@@ -17,6 +17,7 @@ Analyzed different **cereal brands**, their **nutritional values**, and **rating
 
 **Skills Used:**  
 `SQL` 
+
 **Highlights:**  
 - Compared sugar vs rating for cereals  
 - Found top 5 healthiest cereals  
@@ -34,7 +35,7 @@ Analyzed different **cereal brands**, their **nutritional values**, and **rating
 Analyzed a **clinical trials dataset** to understand **trial status, phases, and duration**.
 
 **Skills Used:**  
-`Python` `Pandas` `SQL`  
+ `SQL`  
 
 **Highlights:**  
 - Counted trials per phase  
