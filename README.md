@@ -22,7 +22,7 @@ Analyzed different **cereal brands**, their **nutritional values**, and **rating
 - Compared sugar vs rating for cereals  
 - Found top 5 healthiest cereals  
 
-**📂 [View Project]()**
+**📂 [View Project](https://github.com/AdarshC10/SQL/blob/main/Clinictrial_project_script.sql)**
 </details>
 
 ---
