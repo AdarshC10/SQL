@@ -108,4 +108,4 @@ A **SQL-based case study** analyzing a restaurant’s customer and sales data.
 
 ---
 
-## 📂 Project Structure
+
