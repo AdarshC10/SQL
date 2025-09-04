@@ -26,8 +26,6 @@ Each folder represents one case study with SQL queries, answers, and insights.
 
 ## 🛠 Tech Stack
 
-## 🛠 Tech Stack
-
 ![SQL](https://img.shields.io/badge/SQL-007ACC?style=for-the-badge&logo=mysql&logoColor=white)  
 
  
