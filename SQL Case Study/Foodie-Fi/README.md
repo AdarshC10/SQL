@@ -1,5 +1,7 @@
 # 📺 Case Study #2: Foodie-Fi
 
+![ERD – Foodie-Fi](https://8weeksqlchallenge.com/images/case-study-designs/3.png)
+
 Danny launched a new streaming service called Foodie-Fi, where customers can sign up for different subscription plans.  
 Let’s answer key business questions using SQL.  
 
@@ -15,9 +17,8 @@ This case study is part of the [8 Week SQL Challenge](https://8weeksqlchallenge.
 
 ---
 
-## Entity Relationship Diagram  
-![ERD](https://8weeksqlchallenge.com/images/case-study-2-erd.png)
-
+## Entity Relationship Diagram 
+![ERD – Foodie-Fi](https://8weeksqlchallenge.com/images/case-study-3-erd.png)
 ---
 
 ## Question and Solution  
