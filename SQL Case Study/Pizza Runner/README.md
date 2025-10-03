@@ -609,4 +609,3 @@ GROUP BY co.customer_id, co.order_id, ro.runner_id, rr.rating,
 
 ---
 
-✅ **All sections A–E are now formatted in case study style with SQL → Answer → Explanation.**
