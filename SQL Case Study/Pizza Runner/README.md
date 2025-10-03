@@ -18,7 +18,8 @@ Danny started Pizza Runner — a pizza delivery company. The goal is to analyze 
 
 ## Entity Relationship Diagram
 
-![ERD]("C:\Users\LENOVO\Desktop\imarticus class\SQL\SQL Case Study\Pizza Runner\pizza_runner_entity_releationship_diagram.png")
+![ERD](<img width="1092" height="617" alt="image" src="https://github.com/user-attachments/assets/2b4bb91c-dc37-49bd-86d3-95e6ae24e700" />
+)
 
 ---
 
