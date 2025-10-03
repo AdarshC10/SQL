@@ -1,5 +1,7 @@
 # 🍕 Case Study #1: Pizza Runner
 
+![ERD – Foodie-Fi](https://8weeksqlchallenge.com/images/case-study-designs/2.png)
+
 📚 **Table of Contents**
 
 * [Business Task](#business-task)
