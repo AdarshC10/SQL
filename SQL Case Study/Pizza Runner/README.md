@@ -26,7 +26,207 @@ Danny started Pizza Runner — a pizza delivery company. The goal is to analyze 
 
 ### A. Pizza Metrics
 
-*(Already formatted earlier — showing SQL → Answer → Explanation style)*
+#### 1. How many pizzas were ordered?
+```sql
+SELECT COUNT(*) AS cust_orders
+FROM customer_orders;
+
+
+```
+**Answer:**
+
+| cust_orders |
+|-------------|
+| 14          |
+
+**Explanation:** There were 14 pizza items ordered in total (including duplicates in the same order).
+
+
+#### 2. How many unique customer orders were made?
+
+```sql
+SELECT COUNT(DISTINCT order_id) AS unique_cust_id
+FROM customer_orders;
+```
+**Answer:**
+
+| unique_cust_id |
+|----------------|
+| 10             |
+
+**Explanation:** There were 10 unique customer orders placed, showing that multiple pizzas were ordered in some orders.
+
+#### 3. How many successful orders were delivered by each runner?
+
+```sql
+SELECT runner_id,
+       COUNT(DISTINCT order_id) AS successful_orders
+FROM runner_orders
+WHERE cancellation IS NULL
+GROUP BY runner_id;
+```
+**Answer:**
+
+| runner_id | successful_orders |
+|-----------|------------------|
+| 1         | 4                |
+| 2         | 3                |
+| 3         | 1                |
+
+**Explanation:** Only orders without cancellations are counted. Runner 1 had the most successful deliveries, followed by Runner 2 and Runner 3.
+
+#### 4. How many of each type of pizza was delivered?
+
+```sql
+SELECT pn.pizza_name,
+       COUNT(*) AS delivered_count
+FROM customer_orders co
+JOIN runner_orders ro USING(order_id)
+JOIN pizza_names pn USING(pizza_id)
+WHERE ro.cancellation IS NULL
+GROUP BY pn.pizza_name;
+```
+**Answer:**
+
+| pizza_name   | delivered_count |
+|-------------|----------------|
+| Meatlovers  | 9              |
+| Vegetarian  | 3              |
+
+**Explanation:** Out of 12 delivered pizzas, 9 were Meatlovers and 3 were Vegetarian.
+
+#### 5. How many Vegetarian and Meatlovers were ordered by each customer?
+
+```sql
+SELECT co.customer_id,
+       SUM(CASE WHEN pn.pizza_name = 'Meatlovers' THEN 1 ELSE 0 END) AS meatlovers_count,
+       SUM(CASE WHEN pn.pizza_name = 'Vegetarian' THEN 1 ELSE 0 END) AS veg_count
+FROM customer_orders co
+JOIN pizza_names pn USING(pizza_id)
+GROUP BY co.customer_id
+ORDER BY co.customer_id;
+```
+
+**Answer:**
+
+| customer_id | meatlovers_count | veg_count |
+|------------|-----------------|-----------|
+| 101        | 2               | 1         |
+| 102        | 2               | 1         |
+| 103        | 3               | 1         |
+| 104        | 3               | 0         |
+| 105        | 1               | 1         |
+
+**Explanation:** Customer 103 ordered the most Meatlovers pizzas (3). Customer 101 and 102 each ordered 1 Vegetarian pizza.
+
+#### 6. Maximum number of pizzas delivered in a single order
+
+```sql
+SELECT co.order_id,
+       COUNT(*) AS pizza_count
+FROM customer_orders co
+JOIN runner_orders ro USING(order_id)
+WHERE ro.cancellation IS NULL
+GROUP BY co.order_id
+ORDER BY pizza_count DESC
+LIMIT 1;
+```
+
+
+**Answer:**
+
+| order_id | pizza_count |
+|----------|-------------|
+| 4        | 3           |
+
+**Explanation:** Order 4 contained 3 pizzas, the highest in a single delivery.
+
+#### 7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
+
+```sql
+SELECT co.customer_id,
+       SUM(CASE WHEN co.exclusions IS NOT NULL OR co.extras IS NOT NULL THEN 1 ELSE 0 END) AS with_changes,
+       SUM(CASE WHEN co.exclusions IS NULL AND co.extras IS NULL THEN 1 ELSE 0 END) AS no_changes
+FROM customer_orders co
+JOIN runner_orders ro USING(order_id)
+WHERE ro.cancellation IS NULL
+GROUP BY co.customer_id;
+```
+**Answer:**
+
+| customer_id | with_changes | no_changes |
+|-------------|--------------|------------|
+| 101         | 0            | 2          |
+| 102         | 0            | 2          |
+| 103         | 3            | 0          |
+| 104         | 2            | 1          |
+| 105         | 1            | 0          |
+
+**Explanation:** Customer 103 always requested changes. Customer 101 and 102 never requested changes.
+
+#### 8. How many pizzas were delivered with both exclusions and extras?
+
+```sql
+SELECT COUNT(*) AS pizzas_with_changes
+FROM customer_orders co
+JOIN runner_orders ro USING(order_id)
+WHERE ro.cancellation IS NULL
+  AND co.exclusions IS NOT NULL
+  AND co.extras IS NOT NULL;
+```
+**Answer:**
+
+| pizzas_with_changes |
+|--------------------|
+| 1                  |
+
+**Explanation:** Only 1 delivered pizza had both exclusions and extras.
+
+#### 9. Total volume of pizzas ordered for each hour of the day?
+
+```sql
+SELECT HOUR(order_time) AS order_hour,
+       COUNT(*) AS total_pizzas
+FROM customer_orders
+GROUP BY order_hour
+ORDER BY order_hour;
+```
+
+**Answer:**
+
+| order_hour | total_pizzas |
+|------------|--------------|
+| 11         | 1            |
+| 13         | 3            |
+| 18         | 3            |
+| 19         | 1            |
+| 21         | 3            |
+| 23         | 3            |
+
+**Explanation:** The busiest hours were 13, 21, and 23, with 3 pizzas each.
+
+#### 10. Total number of pizzas ordered for each day of the week?
+
+```sql
+SELECT DAYNAME(order_time) AS order_day,
+       COUNT(*) AS total_pizzas
+FROM customer_orders
+GROUP BY order_day
+ORDER BY total_pizzas DESC;
+```
+
+**Answer:**
+
+| order_day  | total_pizzas |
+|------------|--------------|
+| Wednesday  | 5            |
+| Saturday   | 5            |
+| Friday     | 1            |
+| Thursday   | 1            |
+| Sunday     | 1            |
+| Tuesday    | 1            |
+
+**Explanation:** Wednesday and Saturday were the most popular days with 5 pizzas each.
 
 ---
 
