@@ -1,5 +1,8 @@
 # 📊 Netflix Shows and Movies Analytics Project
 
+<img width="1720" height="720" alt="image" src="https://github.com/user-attachments/assets/16c52214-52a2-4ff4-9d22-7a05765ad81d" />
+
+
 ## 🚀 Overview
 This project analyzes Netflix’s library of movies and shows using **SQL, Excel** to uncover meaningful content insights for subscribers. With over **82,000 rows of data**, the goal was to extract patterns related to ratings, genres, age certifications, and release decades to support content decisions and improve user recommendations.
 
