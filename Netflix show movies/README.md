@@ -15,6 +15,11 @@ Netflix handles a massive dataset and sought answers to:
 A scalable data analytics solution was needed to transform raw data into actionable insights.
 
 ---
+## 📂 Dataset Source
+The dataset used in this analysis is publicly available on Kaggle:  
+🔗 **[Netflix TV Shows and Movies — Kaggle](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies?select=titles.csv)**
+
+---
 
 ## 🛠 Tools & Technologies
 | Tool | Purpose |
