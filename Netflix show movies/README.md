@@ -38,7 +38,7 @@ The dataset used in this analysis is publicly available on Kaggle:
 SELECT title, 
 type, 
 imdb_score
-FROM shows_movies.titles
+FROM titles
 WHERE imdb_score >= 8.0
 AND type = 'MOVIE'
 ORDER BY imdb_score DESC
@@ -53,7 +53,7 @@ LIMIT 10
 SELECT title, 
 type, 
 imdb_score
-FROM shows_movies.titles
+FROM titles
 WHERE imdb_score >= 8.0
 AND type = 'SHOW'
 ORDER BY imdb_score DESC
@@ -67,7 +67,7 @@ LIMIT 10
 SELECT title, 
 type, 
 imdb_score
-FROM shows_movies.titles
+FROM titles
 WHERE type = 'MOVIE'
 ORDER BY imdb_score ASC
 LIMIT 10
@@ -80,7 +80,7 @@ LIMIT 10
 SELECT title, 
 type, 
 imdb_score
-FROM shows_movies.titles
+FROM titles
 WHERE type = 'SHOW'
 ORDER BY imdb_score ASC
 LIMIT 10
@@ -105,7 +105,7 @@ ORDER BY decade;
 SELECT DISTINCT age_certification, 
 ROUND(AVG(imdb_score),2) AS avg_imdb_score,
 ROUND(AVG(tmdb_score),2) AS avg_tmdb_score
-FROM shows_movies.titles
+FROM titles
 GROUP BY age_certification
 ORDER BY avg_imdb_score DESC
 ```
@@ -118,7 +118,7 @@ ORDER BY avg_imdb_score DESC
 ```sql
 SELECT genres, 
 COUNT(*) AS title_count
-FROM shows_movies.titles 
+FROM titles 
 WHERE type = 'Movie'
 GROUP BY genres
 ORDER BY title_count DESC
@@ -130,7 +130,7 @@ LIMIT 10;
 ```sql
 SELECT genres, 
 COUNT(*) AS title_count
-FROM shows_movies.titles 
+FROM titles 
 WHERE type = 'Show'
 GROUP BY genres
 ORDER BY title_count DESC
@@ -140,7 +140,7 @@ LIMIT 10;
 ```sql
 SELECT t.genres, 
 COUNT(*) AS genre_count
-FROM shows_movies.titles AS t
+FROM titles AS t
 WHERE t.type = 'Movie' or t.type = 'Show'
 GROUP BY t.genres
 ORDER BY genre_count DESC
